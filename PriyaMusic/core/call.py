@@ -8,11 +8,23 @@ from datetime import datetime, timedelta
 from typing import Union
 
 from pytgcalls import PyTgCalls
-from pytgcalls.exceptions import (
-    AlreadyJoinedError,
-    NoActiveGroupCall,
-    NotInCallError,
-)
+
+# PyTgCalls changed exception exports across versions. Import defensively.
+try:
+    from pytgcalls.exceptions import (
+        AlreadyJoinedError,
+        NoActiveGroupCall,
+        NotInCallError,
+    )
+except Exception:
+    class AlreadyJoinedError(Exception):
+        pass
+
+    class NoActiveGroupCall(Exception):
+        pass
+
+    class NotInCallError(Exception):
+        pass
 from pytgcalls.types import (
     AudioPiped,
     AudioVideoPiped,
