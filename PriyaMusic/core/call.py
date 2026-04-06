@@ -25,12 +25,38 @@ except Exception:
 
     class NotInCallError(Exception):
         pass
-from pytgcalls.types import (
-    AudioPiped,
-    AudioVideoPiped,
-    MediaStream,
-    VideoPiped,
-)
+# Import types from pytgcalls; handle re-organization across versions.
+try:
+    from pytgcalls.types import (
+        AudioPiped,
+        AudioVideoPiped,
+        MediaStream,
+        VideoPiped,
+    )
+except Exception:
+    # Try alternate submodules
+    try:
+        from pytgcalls.types.stream import MediaStream
+    except Exception:
+        MediaStream = None
+
+    try:
+        from pytgcalls.types.pipes import AudioPiped, AudioVideoPiped, VideoPiped
+    except Exception:
+        AudioPiped = AudioVideoPiped = VideoPiped = None
+
+    # Provide a minimal fallback MediaStream with Flags used by the code.
+    if MediaStream is None:
+        class _Flags:
+            IGNORE = 0
+
+        class MediaStream:
+            Flags = _Flags
+
+            def __init__(self, file, **kwargs):
+                self.file = file
+                self.kwargs = kwargs
+
 from pytgcalls.types.input_stream import AudioParameters, VideoParameters
 
 import config
