@@ -1,0 +1,304 @@
+name: English
+
+# General
+general_1: "Reply to a user or provide a username/ID."
+general_2: "An error occurred: {}"
+general_3: "Anonymous admins can't use this command. Log in as yourself."
+general_4: "You need manage video chat permission to use this."
+general_5: "No active voice chat in this group."
+
+# Start
+start_1: "<b>Hey! I'm {} — your music companion 🎵\n\nUptime: {}</b>"
+start_2: "Hello {}! I'm {} — add me to a group and start playing music 🎶"
+start_3: "Thanks for adding me, {}!\nI'm {} — use me in {} to play music.\n\nType /help to get started."
+start_4: "I only work in supergroups. Please convert this chat to a supergroup first."
+start_5: "This chat is blacklisted. Contact {} or visit {} for help.\nSupport: {}"
+start_6: "🎬 <b>{}</b>\n⏱ Duration: {}\n👁 Views: {}\n📅 Published: {}\n📺 <a href='{}'>Channel: {}</a>\n\nPowered by {}"
+
+# Help
+help_1: "Here's your help menu 📖\nSupport: {}"
+help_2: "Click the button below to get full help in my DM."
+
+# Play
+play_1: "🔍 Searching for your track..."
+play_2: "🔍 Searching for your track in {}..."
+play_3: "❌ No results found."
+play_4: "Only admins can request music in this group."
+play_14: "❌ Download failed. Try again or use a different query."
+play_16: "❌ No active stream to force-play into."
+play_18: "Send a song name, YouTube link, Spotify link, or reply to an audio/video."
+play_19: "📋 Adding playlist to queue..."
+play_20: "➕ Added at position"
+play_21: "✅ Playlist added! {} tracks queued.\n\n[Full list]({})"
+play_22: "⚙️ Play settings for <b>{}</b>"
+
+# Stream
+stream_1: "<b>🎵 Now Playing</b>\n\n<a href='{}'>{}</a>\n⏱ Duration: {}\n👤 Requested by: {}"
+stream_2: "🎵 Now streaming index/M3U8 link\n\nRequested by: {}"
+
+# Queue
+queue_1: "📋 Queue list:"
+queue_2: "❌ Queue is empty."
+queue_3: "📋 Queue list: [View full queue]({})"
+queue_4: "✅ Added at position <b>{}</b>\n\n🎵 {}\n⏱ {}\n👤 {}"
+queue_5: "No other tracks queued."
+queue_6: "Live"
+queue_7: "Inline"
+queue_8: "<b>{} Player</b>\n\n🎵 {}\n📻 Type: {}\n👤 By: {}\n⏱ {}"
+
+# Admin commands
+admin_1: "No music is currently playing."
+admin_2: "⏸ Paused by {}"
+admin_3: "Music is already paused."
+admin_4: "▶️ Resumed by {}"
+admin_5: "⏹ Stream ended by {}"
+admin_6: "✅ Queue cleared and stream ended by {}\n\nChat: {}"
+admin_7: "❌ Failed to load next track: {}"
+admin_8: "Loop is active. Disable it first with /loop disable"
+admin_9: "Please provide a valid number."
+admin_10: "Not enough tracks in queue to skip that many."
+admin_11: "Please enter a number between 1 and {}"
+admin_12: "Queue is empty."
+admin_13: "No admin list found. Use /reload to refresh."
+admin_14: "You need admin rights or be in auth list."
+admin_15: "Only one track in queue — nothing to shuffle."
+admin_16: "🔀 Queue shuffled by {}"
+admin_17: "/loop [enable|disable|1-10]"
+admin_18: "🔁 Loop set to {} by {}"
+admin_19: "🔁 Loop disabled by {}"
+admin_20: "/seek [seconds]"
+admin_21: "Please enter a valid number of seconds."
+admin_22: "Can't seek this stream type."
+admin_23: "Already at: {} / {}"
+admin_24: "Seeking..."
+admin_25: "⏩ Seeked to {} by {}"
+admin_26: "❌ Seek failed."
+admin_27: "Speed change only works on downloaded files."
+admin_28: "{} — Select playback speed:"
+admin_29: "Already at normal speed."
+admin_30: "Speed change in progress, please wait."
+admin_31: "Changing speed..."
+admin_32: "⏳ Changing speed, requested by {}"
+admin_33: "❌ Speed change failed."
+admin_34: "✅ Speed set to {}x by {}"
+
+# Auth
+auth_1: "Max 25 auth users allowed per group."
+auth_2: "✅ {} added to auth list."
+auth_3: "{} is already in auth list."
+auth_4: "✅ {} removed from auth list."
+auth_5: "{} is not in auth list."
+auth_6: "Fetching auth list..."
+auth_7: "📋 Auth users in <b>{}</b>:\n\n"
+auth_8: "Authorized by:"
+
+# Sudo
+sudo_1: "{} is already a sudo user."
+sudo_2: "✅ {} added as sudo user."
+sudo_3: "{} is not a sudo user."
+sudo_4: "✅ {} removed from sudo list."
+sudo_8: "Database error. Try again."
+
+# Gban
+gban_1: "You can't gban yourself."
+gban_2: "You can't gban the bot."
+gban_3: "You can't gban a sudo user."
+gban_4: "{} is already globally banned."
+gban_5: "⏳ Banning {} from all served chats (ETA: {})..."
+gban_6: "✅ {} globally banned from {} chats.\nChat: {} ({})\nUser: {} ({})\nBy: {}"
+gban_7: "{} is not globally banned."
+gban_8: "⏳ Unbanning {} from all chats (ETA: {})..."
+gban_9: "✅ {} globally unbanned from {} chats."
+gban_10: "No globally banned users."
+gban_11: "Fetching gban list..."
+gban_12: "🌐 <b>Globally Banned Users:</b>\n\n"
+
+# Blacklist
+black_1: "Usage: /blacklistchat [chat_id]"
+black_2: "Chat already blacklisted."
+black_3: "✅ Chat blacklisted and left."
+black_4: "Usage: /whitelistchat [chat_id]"
+black_5: "Chat is not blacklisted."
+black_6: "✅ Chat whitelisted."
+black_7: "🚫 <b>Blacklisted Chats:</b>\n\n"
+black_8: "No blacklisted chats. {} is serving all groups."
+black_9: "Database error."
+
+# Block (local ban)
+block_1: "{} is already blocked."
+block_2: "✅ {} blocked from using the bot."
+block_3: "{} is not blocked."
+block_4: "✅ {} unblocked."
+block_5: "No blocked users."
+block_6: "Fetching blocked users..."
+block_7: "🔒 <b>Blocked Users:</b>\n\n"
+
+# Ping
+ping_1: "🏓 Pinging {}..."
+ping_2: "🏓 <b>Pong!</b>\n\n⚡ Response: {}ms\n🤖 {}\n⏱ Uptime: {}\n💾 RAM: {}\n🖥 CPU: {}\n💿 Disk: {}\n📞 PyTgCalls: {}ms"
+
+# Broadcast
+broad_1: "📢 Broadcasting..."
+broad_2: "Provide a message or reply to one."
+broad_3: "✅ Sent to {} chats. Pinned in {}"
+broad_4: "✅ Sent to {} users."
+broad_5: "📤 Broadcasting via assistants..."
+broad_6: "<b>Assistant Broadcast Results:</b>\n\n"
+broad_7: "Assistant {}: {} chats\n"
+broad_8: "Nothing to broadcast."
+
+# Server/update
+server_1: "No log file found."
+server_2: "Set HEROKU_API_KEY and HEROKU_APP_NAME to use /update on Heroku."
+server_3: "Checking for updates..."
+server_4: "Invalid git command."
+server_5: "Not a git repository."
+server_6: "Already up to date!"
+server_7: "✅ Update pushed. Restarting..."
+server_8: "{} is restarting. Please wait ~15 seconds."
+server_9: "❌ Failed to push to Heroku."
+server_10: "Heroku push error: {}"
+server_11: "Running speed test..."
+server_12: "Testing download speed..."
+server_13: "Testing upload speed..."
+server_14: "Generating results..."
+server_15: "📊 <b>Speed Test Results</b>\n\nISP: {}\nCountry: {}\nServer: {}\nServer Country: {}\nCC: {}\nSponsor: {}\nLatency: {}\nPing: {}"
+
+# Language
+lang_1: "🌐 Select your language:"
+lang_2: "✅ Language changed!"
+lang_3: "Language not found."
+lang_4: "This language is already set."
+
+# Settings
+setting_7: "Channel play not configured. Use /channelplay to set it up."
+
+# cplay
+cplay_1: "Current channel: {}\nUse /channelplay [username/id/linked/disable]"
+cplay_2: "No linked channel found."
+cplay_3: "✅ Channel play set to {} ({})"
+cplay_4: "Invalid channel. Bot may not be admin there."
+cplay_5: "That's not a channel."
+cplay_6: "You must be the owner of {} to link it. Owner: @{}"
+cplay_7: "✅ Channel play disabled."
+
+# Reload
+reload_1: "Please wait {}  before refreshing again."
+reload_2: "✅ Admin cache refreshed."
+reload_3: "❌ Failed to refresh. Make sure the bot is admin with appropriate rights."
+reload_4: "Rebooting {} for this chat..."
+reload_5: "✅ {} rebooted for this chat."
+
+# TG download
+tg_1: "{}\n\nTotal: {}\nDownloaded: {}\nProgress: {}%\nSpeed: {}/s\nETA: {}"
+tg_2: "✅ Downloaded in {}"
+tg_3: "❌ Download failed."
+tg_4: "No active download."
+tg_5: "Download already finished."
+tg_6: "✅ Download cancelled."
+tg_7: "❌ Cancelled by {}"
+tg_8: "❌ Could not cancel."
+tg_9: "Download already finished."
+
+# Maintenance
+maint_1: "/maintenance [enable|disable]"
+maint_2: "✅ {} is now in maintenance mode."
+maint_3: "✅ {} maintenance mode disabled."
+maint_4: "Already in maintenance mode."
+maint_5: "Bot is already running normally."
+
+# Gstats
+gstats_1: "Fetching stats for {}..."
+gstats_2: "📊 <b>{} Stats</b>\n\nChoose a stats category:"
+gstats_3: >
+  📊 <b>Overall Stats — {}</b>
+
+  👥 Assistants: {}
+  🚫 Banned users: {}
+  💬 Served chats: {}
+  👤 Served users: {}
+  🧩 Modules: {}
+  👑 Sudo users: {}
+  🤖 Auto-leave assistant: {}
+  ⏱ Duration limit: {} min
+gstats_4: "Only sudo users can view bot stats."
+gstats_5: >
+  📊 <b>Bot Stats — {}</b>
+
+  🧩 Modules: {}
+  🖥 OS: {}
+  💾 RAM: {}
+  🖱 Physical cores: {}
+  🖱 Total cores: {}
+  ⚡ CPU freq: {}
+  🐍 Python: {}
+  📦 Pyrogram: {}
+  📞 PyTgCalls: {}
+  💿 Disk total: {} GB
+  💿 Disk used: {} GB
+  💿 Disk free: {} GB
+  💬 Served chats: {}
+  👤 Served users: {}
+  🚫 Banned: {}
+  👑 Sudo: {}
+  🗄 DB size: {} KB
+  🗄 DB storage: {} KB
+  📁 Collections: {}
+  📄 Documents: {}
+
+# Log
+log_1: "/logger [enable|disable]"
+log_2: "✅ Logger enabled."
+log_3: "✅ Logger disabled."
+
+# Str
+str_1: "Provide a stream URL."
+str_3: "❌ Could not fetch live stream."
+
+# Inline buttons
+CLOSE_BUTTON: "✖ Close"
+BACK_BUTTON: "◀ Back"
+
+H_B_1: "🎵 Admin"
+H_B_2: "🔐 Auth"
+H_B_3: "🚫 Blacklist"
+H_B_4: "📢 Broadcast"
+H_B_5: "🏓 Ping"
+H_B_6: "▶️ Play"
+H_B_7: "👑 Sudo"
+H_B_8: "💬 Active VC"
+H_B_9: "🚀 Start"
+
+S_B_1: "➕ Add to Group"
+S_B_2: "💬 Support"
+S_B_3: "➕ Add Me"
+S_B_4: "⚙️ Settings"
+S_B_8: "🎬 Watch on YouTube"
+S_B_9: "💬 Support"
+
+P_B_1: "🎵 Audio"
+P_B_2: "🎬 Video"
+P_B_3: "📡 Stream Live"
+P_B_4: "⚡ Normal (1.0x)"
+
+QU_B_1: "📋 View Queue"
+QU_B_2: "{} / {}"
+
+ST_B_1: "👥 Auth Users"
+ST_B_2: "▶️ Play Mode"
+ST_B_3: "🌐 Language"
+ST_B_4: "🗳 Vote Mode"
+ST_B_5: "✅ Enabled"
+ST_B_6: "❌ Disabled"
+ST_B_7: "Auth Mode →"
+ST_B_8: "✅ On"
+ST_B_9: "❌ Off"
+ST_B_10: "Search Mode →"
+ST_B_11: "Direct"
+ST_B_12: "Interactive"
+ST_B_13: "Group Play →"
+ST_B_14: "Play Type →"
+
+SA_B_1: "📊 Overall Stats"
+SA_B_2: "🖥 Bot Stats"
+SA_B_3: "📊 Overall Stats"

@@ -1,0 +1,32 @@
+{
+  "name": "PriyaMusic",
+  "description": "A feature-rich Telegram Music Bot with smart autoplay, group management and full security.",
+  "logo": "https://telegra.ph/file/d30d11c4365c025c25e3e.jpg",
+  "keywords": ["python3", "telegram", "bot", "music", "pyrogram"],
+  "env": {
+    "API_ID": { "description": "From https://my.telegram.org", "required": true },
+    "API_HASH": { "description": "From https://my.telegram.org", "required": true },
+    "BOT_TOKEN": { "description": "From @BotFather", "required": true },
+    "MONGO_DB_URI": { "description": "From https://cloud.mongodb.com", "required": true },
+    "OWNER_ID": { "description": "Your Telegram user ID", "required": true },
+    "STRING_SESSION": { "description": "Pyrogram v2 string session", "required": true },
+    "LOGGER_ID": { "description": "Log group/channel ID", "required": true },
+    "STRING_SESSION2": { "required": false },
+    "STRING_SESSION3": { "required": false },
+    "STRING_SESSION4": { "required": false },
+    "STRING_SESSION5": { "required": false },
+    "HEROKU_APP_NAME": { "required": false },
+    "HEROKU_API_KEY": { "required": false },
+    "SPOTIFY_CLIENT_ID": { "required": false },
+    "SPOTIFY_CLIENT_SECRET": { "required": false },
+    "SUPPORT_CHANNEL": { "value": "https://t.me/yourchannel", "required": false },
+    "SUPPORT_CHAT": { "value": "https://t.me/yoursupport", "required": false },
+    "AUTOPLAY_IDLE_MINUTES": { "value": "300", "required": false },
+    "BOT_NAME": { "value": "PriyaMusic", "required": false }
+  },
+  "buildpacks": [
+    { "url": "heroku/python" },
+    { "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git" }
+  ],
+  "stack": "container"
+}
